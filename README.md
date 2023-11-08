@@ -1,4 +1,5 @@
 # Projeto de Demonstração do Uso do GitHub
-Repositório para APS :)
+Repositório para APS(Atividade Pratica Supervionada)
+:)
 
-Este é um projeto de demonstração criado para mostrar como usar o GitHub para gerenciar e colaborar em projetos de código-fonte aberto.
+A APS consistia na produção de uma página em HTML com qualquer conteúdo, dentro do GitHub, com o objetivo de demonstrar para nós, alunos que estamos iniciando no curso de Sistemas da Informação, o uso do GitHub para gerenciar e colaborar em projetos.
