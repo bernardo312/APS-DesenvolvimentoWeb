@@ -2,7 +2,7 @@
 
 Projeto desenvolvido como parte da atividade que consistia na produção de uma calculadora seguindo enunciado da atividade
 
-## Enunciado
+## Requisitos
 
 Desenvolva uma calculadora com as tecnologias da Web HTML, CSS e JavaScript. A calculadora deve conter os números de 0 a 9, as 4 operações básica da matemática (soma, subtração, divisão e multiplicação) e o botão de igual para mostrar o resultado. Além disso, ela deve ter um display que mostre a conta que o usuário digitou e o seu respectivo resultado.
 
