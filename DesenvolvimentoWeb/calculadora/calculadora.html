@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        background-color: #B4A495;
+    }
+    .botaocalculadora {
+        font-family: FreeMono, monospace;
+        font-size: 30px;
+        border-color: #FED954;
+        width: 60px;
+        height: 60px;
+        margin: 2px;
+        color: black;
+        background-color: #3CBBB2;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculadora {
+        display: grid;
+    text-align: center;
+    border-width: 4px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #FED954;
+    padding: 20px;
+    align-content: space-between;
+    background-color: #522C17;
+    }
+
+    .resultado {
+        font-family: FreeMono, monospace;
+    font-size: 20px;
+    width: 250px;
+    height: 60px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #FED954;
+    background-color: #8ccbc7fc;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 4px;
+    align-content: flex-end;
+    align-items: flex-end;
+    }
+</style>
+
+<body>
+    <div class="conteudo">
+        <h1 style="padding-bottom: 50px;
+    padding-top: 20px;color: #FED954;">Calculadora Online</h1>
+        <div class="calculadora">
+            <form action="">
+                <h2 style="padding-bottom: 17px; color: #FED954;">Calculadora</h2>
+                <div class="resultado">
+                    <p id="historico" style="color: #858585;"></p>
+                    <p id="resultado"></p><br />
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="CC" onclick="apagartudo()" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="C" onclick="apagar()" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="/" onclick="calculadora('/')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="X" onclick="calculadora('*')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="7" onclick="calculadora('7')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="8" onclick="calculadora('8')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="9" onclick="calculadora('9')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="-" onclick="calculadora('-')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="4" onclick="calculadora('4')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="5" onclick="calculadora('5')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="6" onclick="calculadora('6')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="+" onclick="calculadora('+')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="1" onclick="calculadora('1')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="2" onclick="calculadora('2')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="3" onclick="calculadora('3')" />
+                        </td>
+                        <td rowspan="2">
+                            <input type="button" class="botaocalculadora" value="=" style="height: 126px"
+                                onclick="calcular()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" class="botaocalculadora" value="0" style="width: 126px"
+                                onclick="calculadora('0')" />
+                        </td>
+                        <td>
+                            <input type="button" class="botaocalculadora" value="." onclick="calculadora('.')" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script>
+        var texto = 0;
+        function calculadora(valor) {
+            if (texto == 1) {
+                document.getElementById('resultado').innerHTML = "";
+                texto = 0;
+            }
+            var calculo = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = calculo + valor;
+
+        }
+
+        function calcular() {
+            var resultado = document.getElementById('resultado').innerHTML;
+            if (resultado) {
+                document.getElementById('resultado').innerHTML = eval(resultado);
+                document.getElementById('historico').innerHTML = eval(resultado);
+            }
+            else {
+                document.getElementById('resultado').innerHTML = "Sem valor para poder calcular"
+                texto = 1;
+            }
+        }
+        function apagartudo() {
+            document.getElementById('resultado').innerHTML = "";
+            document.getElementById('historico').innerHTML = "";
+        }
+        function apagar() {
+            var resultado = document.getElementById('resultado').innerHTML;
+            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
+        }
+    </script>
+</body>
+
+</html>
