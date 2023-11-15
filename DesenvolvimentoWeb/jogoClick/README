@@ -1,0 +1,22 @@
+# Atividade Jogo do click
+
+Atividade para começarmos a praticar o uso do javaScript junto do html, em um jogo simples de acumular pontos conforme clica na tela
+
+## Requisitos
+
+O jogo deve ser criado usando JavaScript puro.
+O jogo deve ter uma área na página que exibe a pontuação atual do jogador e a quantidade de upgrades comprados.
+Cada vez que o jogador clicar no botão, sua pontuação deve aumentar em um valor base.
+O jogador deve ter a opção de comprar um upgrade que aumenta o valor de cada clique em uma determinada quantidade.
+Cada upgrade deve ter um custo em pontos.
+O jogador não deve ser capaz de comprar um upgrade se não tiver pontos suficientes.
+O jogo deve continuar indefinidamente até o jogador conseguir acumular 1000 pontos.
+
+## Exemplo de Funcionamento
+
+O jogador começa com uma pontuação de 0 e nenhum upgrade comprado.
+Cada clique no botão "Clique Aqui!" aumenta a pontuação em 1 ponto.
+O jogador pode comprar o primeiro upgrade por 10 pontos, que aumenta o valor de cada clique em 1 ponto.
+O jogador pode comprar o segundo upgrade por 50 pontos, que aumenta o valor de cada clique em 8 pontos.
+O jogador pode comprar o terceiro upgrade por 100 pontos, que aumenta o valor de cada clique em 16 pontos.
+O jogo continua indefinidamente, com a pontuação aumentando a cada clique e os upgrades disponíveis para compra.
