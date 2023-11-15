@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(218, 226, 233);
+}
+.botao h1{
+    background-color: rgb(243, 61, 61);
+    border-style: solid;
+    border-color: rgb(74, 2, 2);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    align-content: space-around;
+    flex-wrap: wrap;
+    border-width: 2px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+}
+.botao_secundario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h2{
+    border-style: solid;
+    margin: 15px;
+    padding: 20px;
+    background-color: green;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-width: 2px;
+}
+h1{
+    border-radius: 10px;
+}
+.pontuacao{
+    background-color: white;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 20px;
+    font-size: 13px;
+}
+#Jogo{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 36px;
+    border-style: groove;
+    border-width: 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 21px;
+    margin-bottom: 39px;
+}

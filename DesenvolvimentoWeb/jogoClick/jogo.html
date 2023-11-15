@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1 id="Jogo">Cookie clicker simples</h1>
+    <div class="container">
+    <div class="pontuacao">
+    <h1>Pontuação:  <span id="ponto"> 0</span></h1>
+    <h1>Ponto que cada clique vale:  <span id="pontoporclickatual"> 0</span></h1>
+    <hr>
+    <h1>Upgrade +1:  <span id="upgrade1"> 0</span></h1>
+    <h1>Upgrade +8:  <span id="upgrade8"> 0</span></h1>
+    <h1>Upgrade +16:  <span id="upgrade16"> 0</span></h1>
+</div>
+    <div class="botao" onclick="acrescentar()">
+    
+    <h1>Clique Aqui!</h1>
+    </div>
+    </div>
+    <hr>
+    <div class="botao_secundario">
+        
+        <h2 id="pt1" onclick="comprar1()" > +1 ($10pts)</h2>
+        <h2 id="pt8" onclick="comprar8()"> +8 ($50pts)</h2>
+        <h2 id="pt16" onclick="comprar16()"> +16 ($100pts) </h2>
+    </div>
+</body>
+</html>
